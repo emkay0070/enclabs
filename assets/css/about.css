@@ -1,0 +1,273 @@
+/* HERO */
+.abt-hero {
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(to right, #f5f5f5,#f7f7f7);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  /* color: #fff; */
+
+}
+
+
+.abt-h-l {
+  position: relative;
+  max-width: 600px;
+  color: #ddd;
+
+    .abt-hero-cta{
+        background: #fff;
+        border-radius: 4px;
+        padding: 6px 8px;
+        margin-top: 10px;
+        color: #333;
+
+        .btn-cta {
+            padding: 4px;
+            padding-left: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .bi-arrow-right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 4px;
+            }
+        }
+    }
+}
+
+.abt-h-l h1 {
+  font-size: 1.75rem;
+  line-height: 1.1;
+  margin: 1rem 0;
+  color: #f5f5f5;
+}
+
+/* STORY */
+.abt-story {
+    width: 100%;
+    padding: 4rem;
+
+    .story-left{
+        width: 100%;
+    }
+
+    .story-right{
+        width: 50%;
+        height: 50vh;
+
+        .story-content-b{
+            gap: 50px;
+        }
+    }
+}
+
+
+.team{
+    width: 100%;
+    height: 100vh;
+    padding: 4rem;
+    background: #dddddd3b;
+
+    .team-cards{
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .tm-card{
+        width: 280px;
+        height: 320px;
+        padding: 24px;
+        border-radius: 4px;
+        background: #ddd;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        .name{
+            width: 80%;
+            border-radius: 24px;
+            padding: 4px;
+            padding-left: 12px;
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--lyt);
+            color: var(--bck);
+            font-size: 0.9rem;
+        }
+
+        .name p:nth-child(2){
+            background: var(--bck);
+            color: var(--lyt);
+            border-radius: 24px;
+            padding: 2px 8px;
+        }
+
+        .act{
+            padding: 4px 12px;
+            background: var(--lyt);
+            color: var(--bck);
+            position: absolute;
+            right: 2px;
+            top: 150px;
+            transform: rotate(90deg);
+            border-radius: 24px;
+
+            a{
+                color: var(--bck);
+            }
+        }
+
+        .act:hover{
+            cursor: pointer;
+        }
+    }
+
+    .tm-card:nth-child(2){
+        margin-top: -85px;
+    }
+
+}
+
+
+
+/* VIDEO CTA */
+.cta-video {
+  width: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  color: #fff;
+
+    .cta-vidoe-holder{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding: 24px;
+        border-radius: 4px;
+
+        .cta-video-content{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 2;
+        }
+
+        .btn-cta{
+            width: 183px;
+        }
+    }
+
+    .cta-vidoe-holder::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: #00000052;
+    }
+}
+
+
+
+
+/* WHY US */
+.why-us {
+  padding: 4rem;
+  background: #fff;
+
+    .why-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 24px;
+
+        .why-card {
+            background: #f5f5f5;
+            padding: 2rem;
+            border-radius: 6px;
+            transition: transform .3s ease;
+        }
+    }
+
+    .why-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .why-card i {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 780px) {
+    .abt-hero{
+        padding: 4rem 2rem;
+    }
+
+    .abt-story{
+        width: 100%;
+        padding: 4rem 2rem;
+        height: fit-content;
+        flex-wrap: wrap;
+
+        .story-right{
+            width: 100%;
+            height: fit-content;
+        }
+    }
+
+    .why-us{
+        padding: 4rem 2rem;
+    }
+
+    .team{
+        width: 100%;
+        height: fit-content;
+        padding: 4rem 2rem;
+
+        .team-cards{
+            flex-wrap: wrap;
+            margin-top: 20px;
+
+            .tm-card{
+                width: 100%;
+            }
+
+            .tm-card:nth-child(2){
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .cta-video {
+        padding: 4rem 2rem;
+    }
+}
+

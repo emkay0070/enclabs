@@ -1,0 +1,413 @@
+@media screen and (max-width: 1080px) {
+    
+}
+
+
+
+@media screen and (max-width: 980px) {
+    
+}
+
+
+
+@media screen and (max-width: 780px) {
+    body{
+        width: 100% !important;
+    }
+
+    /* hero */
+    .hero{
+        height: fit-content;
+        flex-wrap: wrap;
+        padding: 4rem 2rem;
+
+        h1{
+            font-size: 2rem !important;
+        }
+
+        .hero-cont{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .h-cta{
+            flex-wrap: wrap;
+            gap: 10px;
+            background: #fff;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        .home-secs{
+            margin-top: 10px;
+            display: none !important;
+            visibility: hidden;
+            background: red;
+        }
+    }
+
+    /* About */
+    .about{
+        width: 100%;
+        height: fit-content;
+        padding: 4rem 2rem;
+        flex-wrap: wrap;
+
+
+        .abt-l-cont{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .abt-r{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+
+            .imgs{
+                width: 100%;
+                display: flex;
+                gap: 30px;
+                margin-top: 30px;
+            }
+
+            .img{
+                width: calc(50% - 15px);
+                height: 250px;
+            }
+
+            .img:nth-child(1){
+            margin-left: 0px;        
+            }
+
+            .img:nth-child(2){
+                margin-left: 0px;
+                margin-top: 0px;        
+            }
+        }
+    }
+
+    /* services */
+    .services{
+        width: 100%;
+        height: fit-content;
+        padding: 4rem 2rem;
+
+        .ser-top{
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .ser-top-r{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+         /* ser-cards */
+        .ser-cards{
+            flex-wrap: wrap;
+
+            .ser-card{
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+
+    /* cta */
+    .cta{
+        width: 100%;
+        height: fit-content;
+        padding: 4rem 2rem;
+    }
+    /* stack */
+    .stack{
+        width: 100%;
+        padding: 4rem 2rem;
+
+        .stack-top{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    /* portfolio */
+    .portfolio{
+        width: 100%;
+        height: fit-content;
+        padding: 4rem 2rem;
+
+        .portf-top{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .ports{
+            width: 100%;
+
+            .port-card{
+                width: 80px;
+
+                .port-c-foot{
+                    visibility: hidden;
+                }
+            }
+
+            .port-card.active{
+                width: 60%;
+
+                .port-c-foot{
+                    visibility: visible;
+                }
+            }
+        }
+
+        .ports:hover .port-card{
+            width: 80px;
+            height: 400px;
+        }
+
+        .ports:hover .port-card.active{
+            width: 300px;
+            height: 400px;
+
+            .ptc-stacks{
+                position: absolute;
+                top: -20%;
+            }
+
+            .port-c-foot{
+                visibility: hidden;
+            }
+
+        }
+
+        .ports:hover .port-card:hover{
+            width: 50%;
+            height: 400px;
+
+            .ptc-stacks{
+                position: relative;
+                top: 0%;
+            }
+
+            .port-c-foot{
+                visibility: visible;
+            }
+        }
+
+    }
+
+    .testmonials{
+        width: 100%;
+        height: fit-content;
+        padding: 2rem;
+
+        .tst-top{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .tst-cards{
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            .tst-card{
+                width: 70%;
+            }
+        }
+    }
+
+    /* team */
+    .team{
+        width: 100%;
+        height: fit-content;
+        padding: 2rem;
+
+        .team-top{
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .tm-t-r{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        .team-cards{
+            flex-wrap: wrap;
+            margin-top: 30px;
+
+            .tm-card{
+                width: 100%;
+                height: 480px;
+            }
+        }
+
+        
+        .tm-card:nth-child(2){
+            margin-top: 0;
+        }
+    }
+
+    /* .main-cta */
+    .main-cta{
+        padding: 4rem 2rem;
+    }
+
+    /* blog */
+    .blog{
+        width: 100%;
+        height: fit-content;
+        padding: 2rem;
+
+        .b-cards{
+             gap: 30px;
+             flex-wrap: wrap;
+
+            .b-card{
+                width: 100%;
+                height: 300px;
+                border-radius: 4px;
+                background: #ddd;
+            }
+        }
+
+       
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    /* .hero */
+
+    /* qbout */
+
+    .about h2{
+        font-size: 1.75rem !important;
+    }
+
+    /* services */
+
+    .ser-top h2{
+        font-size: 1.75rem !important;
+    }
+        /* portfolio */
+    .portfolio{
+        width: 100%;
+        padding: 4rem 2rem;
+
+        .ports{
+            width: 100%;
+            height: fit-content;
+            gap: 5px;
+
+            .port-card{
+                width: 20px;
+
+                .port-c-foot{
+                    visibility: hidden;
+                }
+            }
+
+            .port-card.active{
+                width: 60%;
+
+                .port-c-foot{
+                    visibility: visible;
+                }
+            }
+        }
+
+        .ports:hover .port-card{
+            width: 20px;
+            height: 400px;
+        }
+
+        .ports:hover .port-card.active{
+            width: 20px;
+            height: 400px;
+
+            .ptc-stacks{
+                position: absolute;
+                top: -20%;
+            }
+
+            .port-c-foot{
+                visibility: hidden;
+            }
+
+        }
+
+        .ports:hover .port-card:hover{
+            width: 60%;
+            height: 400px;
+
+            .ptc-stacks{
+                position: relative;
+                top: 0%;
+            }
+
+            .port-c-foot{
+                visibility: visible;
+            }
+        }
+
+    }
+
+    /* .tst-card */
+
+    .tst-card{
+                width: 100% !important;
+    }
+
+    /* .b-card */
+    .b-card{
+        height: fit-content !important;
+    }
+}
+@media screen and (max-width: 380px) {
+    html,body{
+        width: 100% !important;
+        overflow-x: hidden;
+    }
+
+
+    :root{
+            --big-font: 1.75rem;
+    }
+
+    
+    .testmonials{
+        width: 100%;
+        height: fit-content;
+        padding: 6rem 2rem;
+
+        .tst-cards{
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            .tst-card{
+                width: 100%;
+                height: fit-content;
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+
+
+@media screen and (max-width: 780px) {
+
+    .port-features {
+        width: 100%;
+        height: fit-content;
+        padding: 2rem;
+
+         .features{
+            width: 100%;
+            height: fit-content;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .feature{
+                width: 100%;
+            }
+         }
+
+    }
+
+    /* .project-show-case */
+    .project-show-case{
+        padding: 4rem 2rem;
+
+        .p03{
+            width: 100%;
+
+            .proj-mid{
+                width: 80%;
+            }
+        }
+    }
+
+
+    .cta-vidoe-holder{
+        width: 100%;
+        height: fit-content !important;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .port-features {
+        width: 100%;
+        height: fit-content;
+        padding: 2rem;
+
+        .H2{
+            font-size: 1.5rem !important;
+        }
+
+         .features{
+            width: 100%;
+            height: fit-content;
+            padding: 2rem;
+            flex-wrap: wrap;
+         }
+    }
+
+    /* .project-show-case */
+    .project-show-case{
+        width: 100%;
+        height: fit-content;
+        padding: 4rem 1rem;
+
+        .xek{
+            width: 100%;
+            height: fit-content;
+            padding-bottom: 3rem !important;
+        }
+
+        .p03{
+            width: 100%;
+            height: fit-content;
+            flex-direction: column;
+
+            .img{
+                height: 30vh;   
+            }
+            .proj-mid{
+                width: 80%;
+            }
+        }
+
+        .projects{
+            width: 100%;
+            height: fit-content;
+            flex-wrap: wrap;
+
+            .project{
+                width: 100%;
+                height: fit-content;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    
+    .features{
+            width: 100%;
+            height: fit-content;
+            padding: 2rem;
+            flex-wrap: wrap;
+
+            .feature{
+                width: 100% !important;
+            }
+    }
+
+    .p03{
+            width: 100%;
+            height: fit-content;
+            flex-direction: column;
+
+            /* .img{
+                height: 30vh;   
+            } */
+            .proj-mid{
+                width: 100% !important;
+                margin-bottom: 3rem;
+            }
+        }
+
+    .cta-video {
+        width: 100%;
+        height: fit-content !important;
+        padding: 1rem;
+
+        .cta-video-content{
+            h2{
+                font-size: 1.5rem !important;
+                background: red;
+            }
+        }
+       
+    }
+}

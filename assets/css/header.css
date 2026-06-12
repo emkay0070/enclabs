@@ -1,0 +1,195 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 99;
+
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.4rem 4rem;
+        transition: all 0.5s ease;
+        position: relative;
+
+        .logo{
+
+            p{
+                font-weight: 700;
+                padding: 4px;
+                color: var(--bck);
+
+                span{
+                    background: var(--bck);
+                    color: var(--lyt);
+                    border-radius: 4px;
+                    padding: 4px;
+                }
+            }
+        }
+
+        .links{
+            display: flex;
+            gap: 10px;
+
+            a{
+                color: var(--bck);
+                padding: 0.2rem 0.4rem;
+            }
+
+            .contact{
+                background: var(--bck);
+                color: var(--lyt);
+                border-radius: 4px;
+            }
+        }
+
+        .sm-activator{
+            position: absolute;
+            top: -50%;
+
+            font-size: 1.3rem;
+        }
+
+    }
+
+    nav.active{
+        background: #ffffff;
+        box-shadow: var(--box-sd);
+    }
+
+
+
+    /* small */
+    .small-nav{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background: #ddd;
+        backdrop-filter: blur(7px);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: right;
+        transform: translateX(-100%); /* starts fully out of viewport */
+        opacity: 0;                   /* optional: fade in */
+        pointer-events: none;          /* prevent clicks when hidden */
+        z-index: 9999;
+
+        .sm-holder{
+            width: 70%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: #ffffff;
+        }
+
+        .sm-t{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--box-sd);
+            padding: 14px;
+
+            .logo{
+
+            p{
+                font-weight: 700;
+                padding: 4px;
+                color: var(--bck);
+
+                span{
+                    background: var(--bck);
+                    color: var(--lyt);
+                    border-radius: 4px;
+                    padding: 4px;
+                }
+            }
+        }
+        }
+
+        .close{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            p{
+                width: 20px;
+                height: 2px;
+                background: var(--bck);
+            }
+
+            p:nth-child(1){
+                transform: rotate(-45deg);
+                transition: 1s all;
+            }
+
+            p:nth-child(2){
+                transform: rotate(45deg);
+                transition: 1s all;
+            }
+        }
+
+        .close:hover{
+            cursor: pointer;
+        }
+
+        .close:hover p:nth-child(1){
+            transform: rotate(-65deg) translate(-30%);
+        }
+
+        .close:hover p:nth-child(2){
+            transform: rotate(65deg) translate(-10%);
+        }
+    }
+
+    .sm-links{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 14px;
+        a{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--bck);
+        }
+    }
+
+    .sm-foot{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-top: 1px solid var(--lyt);
+        padding: 1rem 14px;
+
+        .logo{
+
+            span{
+                background: var(--bck);
+                color: var(--lyt);
+                padding: 2px 6px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    nav{
+        padding: 0.5rem 2rem !important;
+    }
+    nav .links{
+        display: none !important;
+    }
+
+    .sm-activator{
+        top: 20% !important;
+        right: 30px !important;
+    }
+}
